@@ -3,12 +3,16 @@ from app import app
 from app.forms import LoginForm
 
 # Chapter 5: User Logins
-from flask_login import current_user, login_user
+from flask_login import current_user, login_user, login_required
 from app.models import User
+
+# Chapter 5: User Logins / logout
+from flask_login import logout_user
 
 
 @app.route('/')
 @app.route('/index')
+@login_required
 def index():
     user = {'username': 'Miguel'}
     posts = [
@@ -37,3 +41,9 @@ def login():
         login_user(user, remember=form.remember_me.data)
         return redirect(url_for('index'))
     return render_template('login.html', title='Sign In', form=form)
+
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('index'))
