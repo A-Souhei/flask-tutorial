@@ -14,3 +14,6 @@ from app import routes, models
 
 # run:  flask db init
 # run: flask db migrate
+# run: flask db upgrade
+# run: flask db migrate -m "posts table"
+# run: flask db upgrade
