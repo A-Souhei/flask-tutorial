@@ -9,10 +9,8 @@ from app.models import User
 # Chapter 5: User Logins / logout
 from flask_login import logout_user
 
-
 from flask import request
 from werkzeug.urls import url_parse
-
 
 
 @app.route('/')
@@ -46,7 +44,7 @@ def login():
         login_user(user, remember=form.remember_me.data)
         # redirection after login using next
         next_page = request.args.get('next')
-        if not next_page or url_parse(next_page).netloc != '':
+        if not next_page or url_parse(next_page).netloc != '':  # Important to check if the next_page is a relative path
             next_page = url_for('index')
         return redirect(next_page)
     return render_template('login.html', title='Sign In', form=form)
