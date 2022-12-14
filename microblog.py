@@ -6,7 +6,7 @@ from app.models import User, Post
 def make_shell_context():
     return {'db': db, 'User': User, 'Post': Post} # Important to return the db, User and Post objects
     # run: flask shell
-    # run: db.create_all()+
+    # run: db.create_all()
     # run: User.query.all()
     # run: User.query.filter_by(username='john').first()
     # run: u = User(username = 'john', email = 'john@some.mail'
