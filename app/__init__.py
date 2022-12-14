@@ -13,3 +13,4 @@ migrate = Migrate(app, db)
 from app import routes, models
 
 # run:  flask db init
+# run: flask db migrate
