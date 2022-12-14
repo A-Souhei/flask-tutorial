@@ -21,4 +21,7 @@ from app import routes, models
 # run: flask db migrate -m "posts table"
 # run: flask db upgrade
 
+# run:  flask db migrate -m "new fields in user model"
+# run: flask db upgrade
+
 login.login_view = 'login'
