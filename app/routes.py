@@ -1,8 +1,9 @@
+from flask import render_template
 from app import app
-import os
 
 
 @app.route('/')
 @app.route('/index')
 def index():
-    return f"From {os.getenv('FLASK_APP')} : Hello, World!"
+    user = {'username': 'Miguel'}
+    return render_template('index.html', title='Home', user=user)
