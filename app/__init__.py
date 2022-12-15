@@ -17,6 +17,11 @@ from flask_bootstrap import Bootstrap
 
 from flask_moment import Moment
 
+
+from flask_babel import Babel
+
+from flask import request
+
 app = Flask(__name__)
 app.config.from_object(Config)  # Important to load the config
 
@@ -29,6 +34,8 @@ mail = Mail(app)
 bootstrap = Bootstrap(app)
 
 moment = Moment(app)
+
+babel = Babel(app)
 
 from app import routes, models, errors
 
@@ -72,4 +79,14 @@ if not app.debug:
 
         app.logger.setLevel(logging.INFO)
         app.logger.info('Microblog startup')
+
+
+@babel.localeselector
+def get_locale():
+    # return request.accept_languages.best_match(app.config['LANGUAGES'])   # Important to set the language
+    return 'fr'
+
+# run : module 'jinja2.ext' has no attribute 'autoescape'
+# then run : pybabel init -i messages.pot -d app/translations -l fr
+# then run: pybabel compile -d app/translations
 
