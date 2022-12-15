@@ -115,7 +115,7 @@ def before_request():
     if current_user.is_authenticated:
         current_user.last_seen = datetime.utcnow()
         db.session.commit()
-    g.locale = str(get_locale())
+    g.locale = str(get_locale())  # Very important for translating everything including the dates
 
 
 @app.route('/edit_profile', methods=['GET', 'POST'])
