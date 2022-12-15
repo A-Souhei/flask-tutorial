@@ -71,3 +71,5 @@ sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed
 2022-12-15 11:39:12,948 INFO: Microblog startup [in /home/toavina/PycharmProjects/subvers/microblog/app/__init__.py:63]
 2022-12-15 11:39:16,229 INFO: Microblog startup [in /home/toavina/PycharmProjects/subvers/microblog/app/__init__.py:63]
 2022-12-15 11:39:30,996 INFO: Microblog startup [in /home/toavina/PycharmProjects/subvers/microblog/app/__init__.py:63]
+2022-12-15 11:59:02,516 INFO: Microblog startup [in /home/toavina/PycharmProjects/subvers/microblog/app/__init__.py:63]
+2022-12-15 11:59:05,100 INFO: Microblog startup [in /home/toavina/PycharmProjects/subvers/microblog/app/__init__.py:63]
