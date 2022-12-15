@@ -90,3 +90,6 @@ def get_locale():
 # then run : pybabel init -i messages.pot -d app/translations -l fr
 # then run: pybabel compile -d app/translations
 
+# to update
+# run: pybabel extract -F babel.cfg -k _l -o messages.pot .
+# run: pybabel update -i messages.pot -d app/translations

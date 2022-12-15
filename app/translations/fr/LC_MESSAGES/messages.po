@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-12-15 17:05+0300\n"
+"POT-Creation-Date: 2022-12-15 17:22+0300\n"
 "PO-Revision-Date: 2022-12-15 17:08+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -20,69 +20,69 @@ msgstr ""
 
 #: app/templates/404.html:4
 msgid "Not Found"
-msgstr ""
+msgstr "Introuvable"
 
 #: app/templates/404.html:5 app/templates/500.html:6
 msgid "Back"
-msgstr ""
+msgstr "Retour"
 
 #: app/templates/500.html:4
 msgid "An unexpected error has occurred"
-msgstr ""
+msgstr "Une erreur inattendue s'est produite"
 
 #: app/templates/500.html:5
 msgid "The administrator has been notified. Sorry for the inconvenience!"
-msgstr ""
+msgstr "L'administrateur a été informé. Désolé pour le désagrément !"
 
 #: app/templates/_post.html:14
 #, python-format
 msgid "%(username)s said %(when)s"
-msgstr ""
+msgstr "%(username)s a dit %(when)s"
 
 #: app/templates/base.html:4
 msgid "Welcome to Microblog"
-msgstr ""
+msgstr "Bienvenue sur Microblog"
 
 #: app/templates/base.html:21
 msgid "Home"
-msgstr ""
+msgstr "Accueil"
 
 #: app/templates/base.html:22
 msgid "Explore"
-msgstr ""
+msgstr "Explorer"
 
 #: app/templates/base.html:26
 msgid "Login"
-msgstr ""
+msgstr "Se connecter"
 
 #: app/templates/base.html:28
 msgid "Profile"
-msgstr ""
+msgstr "Profil"
 
 #: app/templates/base.html:29
 msgid "Logout"
-msgstr ""
+msgstr "Se déconnecter"
 
 #: app/templates/edit_profile.html:5
 msgid "Edit Profile"
-msgstr ""
+msgstr "Mettre à jour le profil"
 
 #: app/templates/index.html:5
 #, python-format
 msgid "Hi, %(username)s!"
-msgstr ""
+msgstr "Bonjour, %(username)s !"
 
 #: app/templates/index.html:17 app/templates/user.html:41
 msgid "Newer posts"
-msgstr ""
+msgstr "Publications plus récentes"
 
 #: app/templates/index.html:22 app/templates/user.html:46
 msgid "Older posts"
-msgstr ""
+msgstr "Publications plus anciennes"
 
 #: app/templates/login.html:5
 msgid "Sign In"
-msgstr ""
+msgstr "Se connecter"
 
 #: app/templates/login.html:12
 msgid "New User?"
