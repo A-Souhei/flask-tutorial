@@ -13,6 +13,8 @@ import os
 
 from flask_mail import Mail
 
+from flask_bootstrap import Bootstrap
+
 app = Flask(__name__)
 app.config.from_object(Config)  # Important to load the config
 
@@ -21,6 +23,8 @@ migrate = Migrate(app, db)
 login = LoginManager(app)
 
 mail = Mail(app)
+
+bootstrap = Bootstrap(app)
 
 from app import routes, models, errors
 
