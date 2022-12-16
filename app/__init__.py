@@ -22,6 +22,7 @@ from flask_babel import Babel
 
 from flask import request
 
+
 app = Flask(__name__)
 app.config.from_object(Config)  # Important to load the config
 
@@ -37,7 +38,10 @@ moment = Moment(app)
 
 babel = Babel(app)
 
-from app import routes, models, errors
+from app.errors import bp as errors_bp
+app.register_blueprint(errors_bp)
+
+from app import routes, models
 
 # run:  flask db init
 # run: flask db migrate
